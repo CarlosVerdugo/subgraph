@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGODB_CONN, {useNewUrlParser: true})
     console.log("[📥] MongoDB Connection successful");
     return startStandaloneServer(server, {
       listen: { 
-        host: "http://sonrisassonoras.cl.s3-website.us-east-2.amazonaws.com",
+        host: "127.0.0.1",
         port: process.env.APOLLO_PORT,
       },
     })
